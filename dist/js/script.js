@@ -1,6 +1,6 @@
 API.Plugins.motd = {
 	init:function(){
-		API.GUI.Sidebar.Nav.add('Welcome', 'main_navigation');
+		API.GUI.Sidebar.Nav.add('motd', 'main_navigation');
 	},
 }
 
