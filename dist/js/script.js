@@ -1,7 +1,5 @@
-API.Plugins.tasks = {
-	init:function(){
-		API.GUI.Navbar.Task.init();
-	},
+API.Plugins.motd = {
+	init:function(){},
 }
 
-API.Plugins.tasks.init();
+API.Plugins.motd.init();
