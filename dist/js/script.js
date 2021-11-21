@@ -3,9 +3,7 @@ API.Plugins.motd = {
 		API.GUI.Sidebar.Nav.add('motd', 'main_navigation');
 	},
 	load:{
-		index:function(){
-			$('.content-header').hide();
-		},
+		index:function(){},
 	},
 }
 
