@@ -1,8 +1,18 @@
 .icon-motd::before{
 	content: "\f12e";
 }
+.motd-content-wrapper{
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+	overflow-x: hidden;
+}
 .motd-background{
+	background-position: center!important;
+  background-repeat: no-repeat!important;
+  background-size: cover!important;
 	background-image: url('/plugins/motd/dist/img/background.png')!important;
-	height: 100%;
-	flex: 1 1 auto;
 }
