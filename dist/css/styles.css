@@ -1,3 +1,7 @@
 .icon-motd::before{
 	content: "\f12e";
 }
+.motd-background{
+	background-image: url('/plugins/motd/dist/img/background.png')!important;
+	height: 100%;
+}
