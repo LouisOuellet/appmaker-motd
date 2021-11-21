@@ -4,4 +4,6 @@
 .motd-background{
 	background-image: url('/plugins/motd/dist/img/background.png')!important;
 	height: 100%;
+	display: flex;
+  flex-flow: column;
 }
