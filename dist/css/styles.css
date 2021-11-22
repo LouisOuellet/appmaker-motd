@@ -28,8 +28,12 @@
   background-size: cover!important;
 	background-image: url('/plugins/motd/dist/img/background.png')!important;
 }
-.motd-box-centered{
+.motd-box{
 	border-radius:20px;
 	opacity: 75%;
 	padding: 50px;
+}
+.motd-box h1{
+	font-family: 'Scriptina';
+	font-size: 64px;
 }
