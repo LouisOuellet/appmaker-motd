@@ -1,3 +1,15 @@
+@font-face {
+  font-family: 'Scriptina';
+  src: url('/plugins/motd/dist/fonts/Scriptina.eot');
+  src: local('Scriptina'),
+    url('/plugins/motd/dist/fonts/Scriptina.eot?#iefix') format('embedded-opentype'),
+    url('/plugins/motd/dist/fonts/Scriptina.woff2') format('woff2'),
+    url('/plugins/motd/dist/fonts/Scriptina.woff') format('woff'),
+    url('/plugins/motd/dist/fonts/Scriptina.svg#Scriptina') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
 .icon-motd::before{
 	content: "\f12e";
 }
@@ -15,4 +27,8 @@
   background-repeat: no-repeat!important;
   background-size: cover!important;
 	background-image: url('/plugins/motd/dist/img/background.png')!important;
+}
+.motd-box-centered{
+	border-radius:20px;
+	padding: 50px;
 }
