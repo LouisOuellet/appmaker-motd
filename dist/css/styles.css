@@ -30,5 +30,6 @@
 }
 .motd-box-centered{
 	border-radius:20px;
+	opacity: 75%;
 	padding: 50px;
 }
