@@ -10,6 +10,18 @@
   font-style: normal;
   font-display: swap;
 }
+@font-face {
+  font-family: 'SignPainter HouseScript';
+  src: url('/plugins/motd/dist/fonts/SignPainterHouseScript.eot');
+  src: local('SignPainter HouseScript'), local('SignPainterHouseScript'),
+    url('/plugins/motd/dist/fonts/SignPainterHouseScript.eot?#iefix') format('embedded-opentype'),
+    url('/plugins/motd/dist/fonts/SignPainterHouseScript.woff2') format('woff2'),
+    url('/plugins/motd/dist/fonts/SignPainterHouseScript.woff') format('woff'),
+    url('/plugins/motd/dist/fonts/SignPainterHouseScript.svg#SignPainterHouseScript') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
 .icon-motd::before{
 	content: "\f12e";
 }
@@ -32,6 +44,9 @@
 	border-radius:20px;
 	opacity: 75%;
 	padding: 50px;
+}
+.motd-box p{
+	font-family: 'SignPainter HouseScript';
 }
 .motd-box h1{
 	font-family: 'Scriptina';
