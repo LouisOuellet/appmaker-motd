@@ -45,6 +45,9 @@
 	opacity: 60%;
 	padding: 50px;
 }
+.motd-box button{
+	opacity: 100%;
+}
 .motd-box p{
 	font-family: 'SignPainter HouseScript';
 	font-size: 64px;
