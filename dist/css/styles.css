@@ -74,4 +74,5 @@
 }
 .motd-box a.nav-link.active{
   border-bottom-color: rgba(243,156,18);
+  border-bottom-width: 3px!important;
 }
