@@ -23,8 +23,8 @@ API.Plugins.motd = {
 					    html += '<div class="navbar-nav">';
 					      html += '<a class="nav-item nav-link active" href="#">A Propos</a>';
 					      html += '<a class="nav-item nav-link" href="#">Gallerie</a>';
-					      html += '<a class="nav-item nav-link" href="#">Presence</a>';
-					      html += '<a class="nav-item nav-link" href="#">Agenda</a>';
+					      html += '<a class="nav-item nav-link" href="#">Invitations</a>';
+					      html += '<a class="nav-item nav-link" href="#">Programme</a>';
 					      html += '<a class="nav-item nav-link" href="#">Menu</a>';
 					    html += '</div>';
 					  html += '</div>';
