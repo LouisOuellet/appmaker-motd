@@ -3,9 +3,9 @@
 <div class="motd-content-wrapper motd-background row align-items-center text-center justify-content-center">
   <div class="w-auto motd-box bg-black noselect">
     <p><h2>Bienvenue au mariage de</h2></p>
-    <p><h1 class="m-0">Louis Ouellet</h1></p>
+    <p><h1 class="mt-3">Louis Ouellet</h1></p>
     <p><h1>et</h1></p>
-    <p><h1>Christelle Tsague</h1></p>
-    <p class="mt-4"><button class="btn btn-warning btn-lg">Entrer</button></p>
+    <p><h1 class="mt-3">Christelle Tsague</h1></p>
+    <p><button class="btn btn-warning btn-lg mt-4">Entrer</button></p>
   </div>
 </div>
