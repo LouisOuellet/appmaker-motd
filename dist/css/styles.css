@@ -44,16 +44,15 @@
 	border-radius:20px;
 	padding: 50px;
   background: rgba(0,0,0,0.5);
-  color: rgba(255,255,255,0.6);
 }
-.motd-box button{
-  margin-top: 25px;
-}
-.motd-box p{
+.motd-box button{}
+.motd-box h2{
 	font-family: 'SignPainter HouseScript';
+  color: rgba(255,255,255,0.6)!important;
 	font-size: 64px;
 }
 .motd-box h1{
 	font-family: 'Scriptina';
+  color: rgba(255,255,255,0.6)!important;
 	font-size: 64px;
 }
