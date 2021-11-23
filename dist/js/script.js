@@ -14,8 +14,8 @@ API.Plugins.motd = {
 			    html += '<p class="mt-4"><h1 class="mt-4">Christelle Tsague</h1></p>';
 			    html += '<p class="mt-4"><button class="btn btn-warning btn-lg mt-4">Entrer</button></p>';
 			  html += '</div>';
-			  html += '<div class="w-auto motd-box bg-black noselect hide" id="motd-2">';
-					html += '<nav class="navbar navbar-expand-lg navbar-light bg-light">';
+			  html += '<div class="w-auto p-0 motd-box bg-black noselect hide" id="motd-2">';
+					html += '<nav class="navbar navbar-expand-lg">';
 					  html += '<a class="navbar-brand" href="#">MOTD</a>';
 					  html += '<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">';
 					    html += '<span class="navbar-toggler-icon"></span>';
