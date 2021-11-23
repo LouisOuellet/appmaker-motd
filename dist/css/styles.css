@@ -23,7 +23,7 @@
   font-display: swap;
 }
 .wrapper{
-  /* display:none!important; */
+  display:none!important;
 }
 .icon-motd::before{
 	content: "\f12e";
