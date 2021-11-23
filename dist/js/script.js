@@ -16,7 +16,6 @@ API.Plugins.motd = {
 			  html += '</div>';
 			  html += '<div class="w-auto motd-box pt-0 bg-black noselect hide" id="motd-2">';
 					html += '<nav class="navbar navbar-expand-lg navbar-dark bg-transparent">';
-					  html += '<a class="navbar-brand" href="#">MOTD</a>';
 					  html += '<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">';
 					    html += '<i class="fas fa-bars"></i>';
 					  html += '</button>';
