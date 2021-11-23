@@ -9,6 +9,11 @@ API.Plugins.motd = {
 					$('#motd-2').fadeIn('slow','swing');
 				});
 			});
+			$('#motd-2 button').off().click(function(){
+				$('div.motd-content-wrapper').fadeOut('slow','swing',function(){
+					$('div.wrapper').fadeIn('slow','swing');
+				});
+			});
 		},
 	},
 }
