@@ -29,7 +29,7 @@ API.Plugins.motd = {
 					    html += '</div>';
 					  html += '</div>';
 					html += '</nav>';
-			    html += '<p><button class="btn btn-warning btn-lg">Continuer</button></p>';
+			    html += '<p><button class="btn btn-warning btn-lg" data-action="ControlPanel">Control Panel</button></p>';
 			  html += '</div>';
 			html += '</div>';
 			$('body').prepend(html);
@@ -38,7 +38,7 @@ API.Plugins.motd = {
 					$('#motd-2').fadeIn('slow','swing');
 				});
 			});
-			$('#motd-2 button').off().click(function(){
+			$('#motd-2 button[data-action="ControlPanel"]').off().click(function(){
 				$('div.wrapper').show();
 				$('div.motd-content-wrapper').fadeOut('slow','swing');
 			});
