@@ -49,11 +49,13 @@
   margin: 0px;
 }
 .motd-box h2{
+  margin: 0px;
 	font-family: 'SignPainter HouseScript';
   color: rgba(255,255,255,0.7)!important;
 	font-size: 64px;
 }
 .motd-box h1{
+  margin: 0px;
 	font-family: 'Scriptina';
   color: rgba(255,255,255,0.7)!important;
 	font-size: 64px;
