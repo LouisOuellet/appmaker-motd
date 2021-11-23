@@ -66,3 +66,7 @@
   color: rgba(255,255,255,0.7)!important;
 	font-size: 64px;
 }
+.motd-box .nav-item{
+	font-family: 'SignPainter HouseScript';
+	font-size: 24px;
+}
