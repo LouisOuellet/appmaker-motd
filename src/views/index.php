@@ -6,6 +6,6 @@
     <p><h1>Louis Ouellet</h1></p>
     <p><h1>et</h1></p>
     <p><h1>Christelle Tsague</h1></p>
-    <button class="btn btn-warning btn-lg">Plugins</button>
+    <button class="btn btn-warning btn-lg">Entrer</button>
   </div>
 </div>
