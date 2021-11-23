@@ -41,12 +41,12 @@
 	background-image: url('/plugins/motd/dist/img/background.png')!important;
 }
 .motd-box{
-	border-radius:20px;
+	border-radius:25px;
 	padding: 50px;
   background: rgba(0,0,0,0.5);
 }
 .motd-box button{
-	border-radius:20px;
+	border-radius:25px;
 }
 .motd-box p{
   margin: 0px;
