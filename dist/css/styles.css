@@ -69,4 +69,9 @@
 .motd-box .nav-item{
 	font-family: 'SignPainter HouseScript';
 	font-size: 24px;
+  border-bottom-color: rgba(243,156,18,0);
+  border-bottom-width: 3px;
+}
+.motd-box .nav-item .active{
+  border-bottom-color: rgba(243,156,18,1);
 }
