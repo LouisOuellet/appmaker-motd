@@ -21,10 +21,10 @@ API.Plugins.motd = {
 					  html += '</button>';
 					  html += '<div class="collapse navbar-collapse" id="navbarNavAltMarkup">';
 					    html += '<div class="navbar-nav">';
-					      html += '<a class="nav-item nav-link active" href="#">About</a>';
-					      html += '<a class="nav-item nav-link" href="#">Gallery</a>';
-					      html += '<a class="nav-item nav-link" href="#">Attendance</a>';
-					      html += '<a class="nav-item nav-link" href="#">Planing</a>';
+					      html += '<a class="nav-item nav-link active" href="#">A Propos</a>';
+					      html += '<a class="nav-item nav-link" href="#">Gallerie</a>';
+					      html += '<a class="nav-item nav-link" href="#">Presence</a>';
+					      html += '<a class="nav-item nav-link" href="#">Agenda</a>';
 					      html += '<a class="nav-item nav-link" href="#">Menu</a>';
 					    html += '</div>';
 					  html += '</div>';
