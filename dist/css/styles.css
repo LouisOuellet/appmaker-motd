@@ -66,12 +66,12 @@
   color: rgba(255,255,255,0.7)!important;
 	font-size: 64px;
 }
-.motd-box .nav-item{
+.motd-box .nav-link{
 	font-family: 'SignPainter HouseScript';
 	font-size: 24px;
   border-bottom-color: rgba(243,156,18,0);
   border-bottom-width: 3px;
 }
-.motd-box .nav-item .active{
+.motd-box .nav-link.active{
   border-bottom-color: rgba(243,156,18,1);
 }
