@@ -4,6 +4,7 @@ API.Plugins.motd = {
 	},
 	load:{
 		index:function(){
+			$('div.wrapper').hide();
 			var html = '';
 			html += '<div class="motd-content-wrapper motd-background row align-items-center text-center justify-content-center">';
 			  html += '<div class="w-auto motd-box bg-black noselect" id="motd-1">';
@@ -14,6 +15,20 @@ API.Plugins.motd = {
 			    html += '<p class="mt-4"><button class="btn btn-warning btn-lg mt-4">Entrer</button></p>';
 			  html += '</div>';
 			  html += '<div class="w-auto motd-box bg-black noselect hide" id="motd-2">';
+					html += '<nav class="navbar navbar-expand-lg navbar-light bg-light">';
+					  html += '<a class="navbar-brand" href="#">MOTD</a>';
+					  html += '<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">';
+					    html += '<span class="navbar-toggler-icon"></span>';
+					  html += '</button>';
+					  html += '<div class="collapse navbar-collapse" id="navbarNavAltMarkup">';
+					    html += '<div class="navbar-nav">';
+					      html += '<a class="nav-item nav-link active" href="#">Home <span class="sr-only">(current)</span></a>';
+					      html += '<a class="nav-item nav-link" href="#">Features</a>';
+					      html += '<a class="nav-item nav-link" href="#">Pricing</a>';
+					      html += '<a class="nav-item nav-link disabled" href="#">Disabled</a>';
+					    html += '</div>';
+					  html += '</div>';
+					html += '</nav>';
 			    html += '<p><button class="btn btn-warning btn-lg">Continuer</button></p>';
 			  html += '</div>';
 			html += '</div>';
