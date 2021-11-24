@@ -56,7 +56,7 @@ API.Plugins.motd = {
 								html += '<button class="btn btn-outline-warning btn-lg active" data-menu="adulte">Adulte</button>';
 								html += '<button class="btn btn-outline-warning btn-lg" data-menu="enfant">Enfant</button>';
 							html += '</div>';
-							html += '<div class="motd-menus">';
+							html += '<div class="motd-menus mt-4">';
 								html += '<div class="motd-menu active" data-menu="adulte">';
 									html += '<p><h3>Bouchées à la volée</h3></p>';
 									html += '<p>';
