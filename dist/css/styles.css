@@ -76,6 +76,20 @@
 .motd-box a.nav-link.active{
   border-bottom-color: rgba(243,156,18);
 }
+.motd-page ul{
+  margin-top: 0;
+  margin-bottom: 1rem;
+  display: block;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  padding-inline-start: 40px;
+  list-style: none;
+  list-style-position: initial;
+  list-style-image: initial;
+  list-style-type: none;
+}
 .motd-page .timeline:before {
   position: absolute;
   top: 0;
