@@ -55,7 +55,7 @@ API.Plugins.motd = {
                       html += '<h4>December 2015</h4>';
                       html += '<h4 class="subheading">Transition to Full Service</h4>';
                     html += '</div>';
-                    html += '<div class="timeline-body"><p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p></div>';
+                    html += '<div class="timeline-body"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p></div>';
                   html += '</div>';
                 html += '</li>';
                 html += '<li class="timeline-inverted">';
@@ -65,7 +65,7 @@ API.Plugins.motd = {
                       html += '<h4>July 2020</h4>';
                       html += '<h4 class="subheading">Phase Two Expansion</h4>';
                     html += '</div>';
-                    html += '<div class="timeline-body"><p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p></div>';
+                    html += '<div class="timeline-body"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p></div>';
                   html += '</div>';
                 html += '</li>';
                 html += '<li class="timeline-inverted">';
