@@ -54,7 +54,7 @@ API.Plugins.motd = {
 	                    html += '<div class="close-modal" data-bs-dismiss="modal"><img src="/plugins/motd/dist/img/close-icon.svg" alt="Close modal" /></div>';
 	                    html += '<div class="container">';
                         html += '<div class="row justify-content-center">';
-                          html += '<div class="col-lg-8">';
+                          html += '<div class="col-12">';
                             html += '<div class="modal-body">';
                               html += '<img class="img-fluid d-block mx-auto" src="/plugins/motd/dist/img/background.png" alt="..." />';
                             html += '</div>';
