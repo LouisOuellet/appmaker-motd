@@ -66,11 +66,6 @@ API.Plugins.motd = {
                     html += '<div class="timeline-body"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p></div>';
                   html += '</div>';
                 html += '</li>';
-                html += '<li class="timeline-inverted">';
-                  html += '<div class="timeline-image">';
-                    html += '<h4>Be Part<br>Of Our<br>Story!</h4>';
-                  html += '</div>';
-                html += '</li>';
               html += '</ul>';
 						html += '</div>';
 						html += '<div class="motd-page hide" data-page="menu">';
