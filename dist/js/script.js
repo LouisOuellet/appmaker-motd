@@ -16,16 +16,16 @@ API.Plugins.motd = {
 			  html += '</div>';
 			  html += '<div class="w-auto motd-box pt-0 bg-black noselect hide" id="motd-2">';
 					html += '<nav class="navbar navbar-expand-lg navbar-dark bg-transparent">';
-					  html += '<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">';
+					  html += '<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarMOTD" aria-controls="navbarMOTD" aria-expanded="false" aria-label="Toggle navigation">';
 					    html += '<i class="fas fa-bars"></i>';
 					  html += '</button>';
-					  html += '<div class="collapse navbar-collapse" id="navbarNavAltMarkup">';
+					  html += '<div class="collapse navbar-collapse" id="navbarMOTD">';
 					    html += '<div class="navbar-nav">';
-					      html += '<a class="nav-item nav-link active" href="#">A Propos</a>';
-					      html += '<a class="nav-item nav-link" href="#">Gallerie</a>';
-					      html += '<a class="nav-item nav-link" href="#">Invitations</a>';
-					      html += '<a class="nav-item nav-link" href="#">Programme</a>';
-					      html += '<a class="nav-item nav-link" href="#">Menu</a>';
+					      html += '<a class="nav-item nav-link active" data-page="A Propos">A Propos</a>';
+					      html += '<a class="nav-item nav-link" data-page="Gallerie">Gallerie</a>';
+					      html += '<a class="nav-item nav-link" data-page="Invitations">Invitations</a>';
+					      html += '<a class="nav-item nav-link" data-page="Programme">Programme</a>';
+					      html += '<a class="nav-item nav-link" data-page="Menu">Menu</a>';
 					    html += '</div>';
 					  html += '</div>';
 					html += '</nav>';
@@ -33,6 +33,8 @@ API.Plugins.motd = {
 			  html += '</div>';
 			html += '</div>';
 			$('body').prepend(html);
+			var motd = $('body').find('div.motd-content-wrapper').first();
+			var nav = motd.find('nav.navbar.navbar-expand-lg.navbar-dark.bg-transparent').first();
 			$('#motd-1 button').off().click(function(){
 				$('#motd-1').fadeOut('slow','swing',function(){
 					$('#motd-2').fadeIn('slow','swing');
@@ -41,6 +43,10 @@ API.Plugins.motd = {
 			$('#motd-2 button[data-action="ControlPanel"]').off().click(function(){
 				$('div.wrapper').show();
 				$('div.motd-content-wrapper').fadeOut('slow','swing');
+			});
+			nav.find('a[data-page]').off().click(function(){
+				nav.find('a[data-page]').removeClass('active');
+				$(this).addClass('active');
 			});
 		},
 	},
