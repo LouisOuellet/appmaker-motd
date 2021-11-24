@@ -15,7 +15,7 @@ API.Plugins.motd = {
 			    html += '<p class="mt-4"><button class="btn btn-warning btn-lg mt-4">Entrer</button></p>';
 			  html += '</div>';
 			  html += '<div class="w-auto motd-box pt-0 bg-black noselect hide" id="motd-2">';
-					html += '<nav class="navbar navbar-expand-lg navbar-dark bg-transparent">';
+					html += '<nav class="navbar navbar-expand-lg navbar-dark bg-transparent w-auto">';
 					  html += '<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarMOTD" aria-controls="navbarMOTD" aria-expanded="false" aria-label="Toggle navigation">';
 					    html += '<i class="fas fa-bars"></i>';
 					  html += '</button>';
@@ -61,7 +61,7 @@ API.Plugins.motd = {
 			html += '</div>';
 			$('body').prepend(html);
 			var motd = $('body').find('div.motd-content-wrapper').first();
-			var nav = motd.find('nav.navbar.navbar-expand-lg.navbar-dark.bg-transparent').first();
+			var nav = motd.find('nav.navbar').first();
 			var pages = motd.find('div.motd-pages').first();
 			$('#motd-1 button').off().click(function(){
 				$('#motd-1').fadeOut('slow','swing',function(){
