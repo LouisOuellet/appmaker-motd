@@ -147,7 +147,7 @@
   margin-left: 0;
   text-align: center;
   color: white;
-  border: 7px solid #e9ecef;
+  border: 7px solid rgba(255,255,255,0.7);
   border-radius: 100%;
   background-color: rgba(243,156,18);
 }
