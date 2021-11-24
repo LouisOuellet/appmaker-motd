@@ -206,7 +206,7 @@
     left: 50%;
     width: 100px;
     height: 100px;
-    margin-left: -50px;
+    margin-left: -70px;
   }
   .motd-page .timeline > li .timeline-image h4, .motd-page .timeline > li .timeline-image .h4 {
     font-size: 13px;
@@ -229,7 +229,7 @@
   .motd-page .timeline > li .timeline-image {
     width: 150px;
     height: 150px;
-    margin-left: -75px;
+    margin-left: -95px;
   }
   .motd-page .timeline > li .timeline-image h4, .motd-page .timeline > li .timeline-image .h4 {
     font-size: 18px;
@@ -250,7 +250,7 @@
   .motd-page .timeline > li .timeline-image {
     width: 170px;
     height: 170px;
-    margin-left: -85px;
+    margin-left: -105px;
   }
   .motd-page .timeline > li .timeline-image h4, .motd-page .timeline > li .timeline-image .h4 {
     margin-top: 40px;
