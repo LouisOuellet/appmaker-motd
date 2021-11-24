@@ -14,12 +14,12 @@ API.Plugins.motd = {
 			    html += '<p class="mt-4"><h1 class="mt-4">Christelle Tsague</h1></p>';
 			    html += '<p class="mt-4"><button class="btn btn-warning btn-lg mt-4">Entrer</button></p>';
 			  html += '</div>';
-			  html += '<div class="motd-box pt-0 bg-black noselect hide justify-content-center" id="motd-2">';
-					html += '<nav class="navbar navbar-expand-lg navbar-dark bg-transparent justify-content-center">';
+			  html += '<div class="motd-box pt-0 bg-black noselect hide" id="motd-2">';
+					html += '<nav class="navbar navbar-expand-lg navbar-dark bg-transparent">';
 					  html += '<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarMOTD" aria-controls="navbarMOTD" aria-expanded="false" aria-label="Toggle navigation">';
 					    html += '<i class="fas fa-bars"></i>';
 					  html += '</button>';
-					  html += '<div class="collapse navbar-collapse" id="navbarMOTD">';
+					  html += '<div class="collapse navbar-collapse justify-content-center" id="navbarMOTD">';
 					    html += '<div class="navbar-nav">';
 					      html += '<a class="nav-item nav-link active" data-page="about">A Propos</a>';
 					      html += '<a class="nav-item nav-link" data-page="gallery">Gallerie</a>';
