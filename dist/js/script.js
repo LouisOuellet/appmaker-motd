@@ -52,7 +52,13 @@ API.Plugins.motd = {
 						html += '</div>';
 						html += '<div class="motd-page hide" data-page="menu">';
 							html += '<p><h2>Menu</h2></p>';
-							html += '<p><h3>Adulte</h3></p>';
+							html += '<p>';
+								html += '<div class="btn-group btn-block">';
+									html += '<button class="btn btn-outline-warning btn-lg active">Adulte</button>';
+									html += '<button class="btn btn-outline-warning btn-lg">Enfant</button>';
+								html += '</div>';
+							html += '</p>';
+							html += '<p><h3 style="text-decoration: underline;">Adulte</h3></p>';
 							html += '<p><h4>Bouchées à la volée</h4></p>';
 							html += '<p>';
 								html += 'Station du maraîcher - Légumes de saison en crudités, craquelins maison, hummus et trempettes';
@@ -75,7 +81,7 @@ API.Plugins.motd = {
 							html += '</p>';
 							html += '<p><h4>Dessert</h4></p>';
 							html += '<p>Feuilleté d’été fraises au sirop de mélilot, crème chiboust et fleurs<br>*Café, thé et infusion inclus</p>';
-							html += '<p><h3>Enfant</h3></p>';
+							html += '<p><h3 style="text-decoration: underline;">Enfant</h3></p>';
 							html += '<p><h4>Entrees</h4></p>';
 							html += '<p>Soupe, Crème de courgettes, sumac et herbes fraîches</p>';
 							html += '<p><h4>Résistance</h4></p>';
