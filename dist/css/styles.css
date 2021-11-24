@@ -96,7 +96,7 @@
 }
 .motd-page .timeline-image h4{
   font-family: 'SignPainter HouseScript'!important;
-  font-size: 64px;
+  font-size: 64px!important;
   color: rgba(255,255,255)!important;
 }
 .motd-page .timeline:before {
