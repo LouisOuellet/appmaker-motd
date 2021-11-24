@@ -9,7 +9,7 @@ API.Plugins.motd = {
 			html += '<div class="motd-content-wrapper motd-background row align-items-center text-center justify-content-center">';
 			  html += '<div class="w-auto motd-box bg-black noselect" id="motd-1">';
 			    html += '<p><h2>Bienvenue au mariage de</h2></p>';
-			    html += '<p><h1 class="mt-3">Louis Ouellet</h1></p>';
+			    html += '<p><h1 class="mt-3">Louis ouellet</h1></p>';
 			    html += '<p><h1>et</h1></p>';
 			    html += '<p class="mt-4"><h1 class="mt-4">Christelle Tsague</h1></p>';
 			    html += '<p class="mt-4"><button class="btn btn-warning btn-lg mt-4">Entrer</button></p>';
@@ -61,13 +61,13 @@ API.Plugins.motd = {
 									html += '<p><h3>Bouchées à la volée</h3></p>';
 									html += '<p>';
 										html += 'Station du maraîcher - Légumes de saison en crudités, craquelins maison, hummus et trempettes';
-										html += '<br>Ou<br>';
+										html += '<br>ou<br>';
 										html += 'Charcuteries en folies - saucissons bio de Charlevoix, jambon cru, fraises, melons, salade d’herbes';
 									html += '</p>';
 									html += '<p><h3>Entrées</h3></p>';
 									html += '<p>';
 										html += 'Tartelette aux légumes grillés - Fromage, tomates, courgettes vinaigrette';
-										html += '<br>Ou<br>';
+										html += '<br>ou<br>';
 										html += 'Tomates de Fardoche - Haloumi grillé de St-Robert, pesto du jardin, pousses, crumble à la fleur d’ail';
 									html += '</p>';
 									html += '<p><h3>Soupe</h3></p>';
@@ -75,7 +75,7 @@ API.Plugins.motd = {
 									html += '<p><h3>Résistance</h3></p>';
 									html += '<p>';
 										html += 'Filet de porc sirop-whiskey-piment goria écrasé de pommes de terre à l’ail grillé, lime et gingembre';
-										html += '<br>Ou<br>';
+										html += '<br>ou<br>';
 										html += 'Blanc de volaille citron-oregano sauce chimichurri et légumes du marché';
 									html += '</p>';
 									html += '<p><h3>Dessert</h3></p>';
@@ -85,7 +85,7 @@ API.Plugins.motd = {
 									html += '<p><h3>Entrees</h3></p>';
 									html += '<p>Soupe, Crème de courgettes, sumac et herbes fraîches</p>';
 									html += '<p><h3>Résistance</h3></p>';
-									html += '<p>Pates<br>Ou<br>Pizza du chef</p>';
+									html += '<p>Pates<br>ou<br>Pizza du chef</p>';
 									html += '<p><h3>Dessert</h3></p>';
 									html += '<p>Feuilleté d’été fraises au sirop de mélilot, crème chiboust et fleurs</p>';
 								html += '</div>';
@@ -101,19 +101,19 @@ API.Plugins.motd = {
 			var pages = motd.find('div.motd-pages').first();
 			var menus = motd.find('div.motd-menus').first();
 			$('#motd-1 button').off().click(function(){
-				$('#motd-1').fadeOut('slow','swing',function(){
+				$('#motd-1').fadeout('slow','swing',function(){
 					$('#motd-2').fadeIn('slow','swing');
 				});
 			});
 			$('#motd-2 button[data-action="ControlPanel"]').off().click(function(){
 				$('div.wrapper').show();
-				$('div.motd-content-wrapper').fadeOut('slow','swing');
+				$('div.motd-content-wrapper').fadeout('slow','swing');
 			});
 			nav.find('a[data-page]').off().click(function(){
 				var page = $(this).attr('data-page');
 				nav.find('a[data-page]').removeClass('active');
 				$(this).addClass('active');
-				pages.find('div[data-page].active').removeClass('active').fadeOut('slow','swing',function(){
+				pages.find('div[data-page].active').removeClass('active').fadeout('slow','swing',function(){
 					pages.find('div[data-page="'+page+'"]').addClass('active').fadeIn('slow','swing');
 				});
 			});
@@ -121,7 +121,7 @@ API.Plugins.motd = {
 				var menu = $(this).attr('data-menu');
 				pages.find('div[data-page="menu"]').find('div.btn-group button.active').removeClass('active');
 				$(this).addClass('active');
-				menus.find('div[data-menu].active').removeClass('active').fadeOut('slow','swing',function(){
+				menus.find('div[data-menu].active').removeClass('active').fadeout('slow','swing',function(){
 					menus.find('div[data-menu="'+menu+'"]').addClass('active').fadeIn('slow','swing');
 				});
 			});
