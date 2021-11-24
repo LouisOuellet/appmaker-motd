@@ -35,6 +35,7 @@ API.Plugins.motd = {
 			$('body').prepend(html);
 			var motd = $('body').find('div.motd-content-wrapper').first();
 			var nav = motd.find('nav.navbar.navbar-expand-lg.navbar-dark.bg-transparent').first();
+			console.log(motd,nav);
 			$('#motd-1 button').off().click(function(){
 				$('#motd-1').fadeOut('slow','swing',function(){
 					$('#motd-2').fadeIn('slow','swing');
