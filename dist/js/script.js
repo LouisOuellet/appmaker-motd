@@ -49,7 +49,7 @@ API.Plugins.motd = {
 							html += '<p><h2>Programme</h2></p>';
               html += '<ul class="timeline">';
                 html += '<li>';
-                  html += '<div class="timeline-image"><img class="rounded-circle img-fluid" src="assets/img/about/3.jpg" alt="..."></div>';
+                  html += '<div class="timeline-image"><h4>Be Part<br>Of Our<br>Story!</h4></div>';
                   html += '<div class="timeline-panel">';
                     html += '<div class="timeline-heading">';
                       html += '<h4>December 2015</h4>';
@@ -59,7 +59,7 @@ API.Plugins.motd = {
                   html += '</div>';
                 html += '</li>';
                 html += '<li class="timeline-inverted">';
-                  html += '<div class="timeline-image"><img class="rounded-circle img-fluid" src="assets/img/about/4.jpg" alt="..."></div>';
+                  html += '<div class="timeline-image"><h4>Be Part<br>Of Our<br>Story!</h4></div>';
                   html += '<div class="timeline-panel">';
                     html += '<div class="timeline-heading">';
                       html += '<h4>July 2020</h4>';
