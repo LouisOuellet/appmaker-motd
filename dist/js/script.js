@@ -101,19 +101,19 @@ API.Plugins.motd = {
 			var pages = motd.find('div.motd-pages').first();
 			var menus = motd.find('div.motd-menus').first();
 			$('#motd-1 button').off().click(function(){
-				$('#motd-1').fadeout('slow','swing',function(){
+				$('#motd-1').fadeOut('slow','swing',function(){
 					$('#motd-2').fadeIn('slow','swing');
 				});
 			});
 			$('#motd-2 button[data-action="ControlPanel"]').off().click(function(){
 				$('div.wrapper').show();
-				$('div.motd-content-wrapper').fadeout('slow','swing');
+				$('div.motd-content-wrapper').fadeOut('slow','swing');
 			});
 			nav.find('a[data-page]').off().click(function(){
 				var page = $(this).attr('data-page');
 				nav.find('a[data-page]').removeClass('active');
 				$(this).addClass('active');
-				pages.find('div[data-page].active').removeClass('active').fadeout('slow','swing',function(){
+				pages.find('div[data-page].active').removeClass('active').fadeOut('slow','swing',function(){
 					pages.find('div[data-page="'+page+'"]').addClass('active').fadeIn('slow','swing');
 				});
 			});
@@ -121,7 +121,7 @@ API.Plugins.motd = {
 				var menu = $(this).attr('data-menu');
 				pages.find('div[data-page="menu"]').find('div.btn-group button.active').removeClass('active');
 				$(this).addClass('active');
-				menus.find('div[data-menu].active').removeClass('active').fadeout('slow','swing',function(){
+				menus.find('div[data-menu].active').removeClass('active').fadeOut('slow','swing',function(){
 					menus.find('div[data-menu="'+menu+'"]').addClass('active').fadeIn('slow','swing');
 				});
 			});
