@@ -40,7 +40,7 @@ API.Plugins.motd = {
 							html += '<div class="row">';
 								html += '<div class="col-lg-4 col-sm-6 mb-4">';
 									html += '<div class="portfolio-item">';
-										html += '<a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal1">';
+										html += '<a class="portfolio-link" data-toggle="modal" href="#portfolioModal1">';
 											html += '<div class="portfolio-hover">';
 												html += '<div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>';
 											html += '</div>';
