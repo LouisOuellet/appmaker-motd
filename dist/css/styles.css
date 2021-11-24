@@ -90,12 +90,11 @@
   list-style-image: initial;
   list-style-type: none;
 }
-.motd-page .timeline h4{
+.motd-page .timeline-heading h4{
   font-family: 'SignPainter HouseScript'!important;
   color: rgba(255,255,255,0.7)!important;
 }
 .motd-page .timeline-image h4{
-  font-family: $font-family-base!important;
   color: rgba(255,255,255)!important;
 }
 .motd-page .timeline:before {
