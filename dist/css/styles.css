@@ -47,6 +47,7 @@
 	border-radius:25px;
 	padding: 50px;
   background: rgba(0,0,0,0.5);
+  max-width: 900px;
 }
 .motd-box button{
   border-radius:25px;
