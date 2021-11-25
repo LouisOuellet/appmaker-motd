@@ -12,13 +12,18 @@ API.Plugins.motd = {
 				var dataset = JSON.parse(result);
 				if(dataset.success != undefined){
 					var data = dataset.output;
+					console.log(data);
 					var html = '';
 					html += '<div class="motd-content-wrapper motd-background row m-0 align-items-center text-center justify-content-center">';
 					  html += '<div class="w-auto motd-box bg-black noselect" id="motd-1">';
 					    html += '<p><h2>Bienvenue au mariage de</h2></p>';
-					    html += '<p><h1 class="mt-3">Louis ouellet</h1></p>';
-					    html += '<p><h1>et</h1></p>';
-					    html += '<p class="mt-4"><h1 class="mt-4">Christelle Tsague</h1></p>';
+							for(var [key, host] of Object.entries(API.Helper.trim(data.this.raw.setHosts,';').split(';'))){
+								if(key > 0){ html += '<p><h1>&</h1></p>'; }
+								html += '<p><h1 class="mt-3">'+data.relations[data.this.raw.setHostType].name+'</h1></p>';
+							}
+					    // html += '<p><h1 class="mt-3">Louis ouellet</h1></p>';
+					    // html += '<p><h1>et</h1></p>';
+					    // html += '<p class="mt-4"><h1 class="mt-4">Christelle Tsague</h1></p>';
 					    html += '<p class="mt-4"><button class="btn btn-warning btn-lg mt-4">Entrer</button></p>';
 					  html += '</div>';
 					  html += '<div class="motd-box pt-0 bg-black noselect hide" id="motd-2">';

@@ -21,7 +21,7 @@
             "hasGallery": "true",
             "hasVows": "true",
             "hasMenu": "true",
-            "setHosts": "2",
+            "setHosts": "3;4",
             "setHostType": "users",
             "setPlanners": null,
             "setStaffs": null,
