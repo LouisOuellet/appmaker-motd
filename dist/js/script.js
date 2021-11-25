@@ -37,7 +37,7 @@ API.Plugins.motd = {
 						html += '</div>';
 						html += '<div class="motd-page hide" data-page="gallery">';
 							html += '<p><h2>Gallerie</h2></p>';
-							html += '<div class="row">';
+							html += '<div class="row justify-content-center">';
 								html += '<div class="col-lg-4 col-sm-6 mb-4">';
 									html += '<div class="portfolio-item">';
 										html += '<a class="portfolio-link" data-toggle="modal" href="#portfolioModal1">';
