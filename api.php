@@ -49,7 +49,7 @@ class motdAPI extends CRUDAPI {
 			// Load Hosts
 			if(isset($get['success'],$get['output']['this']['raw']['setHosts'])){
 				if(!isset($get['output']['details'][$get['output']['this']['raw']['setHostType']])){ $get['output']['details']['users'] = ['dom' => [],'raw' => []]; }
-				foreach(explode(";",trim($get['output']['this']['raw']['hosts'],";")) as $ID){
+				foreach(explode(";",trim($get['output']['this']['raw']['setHosts'],";")) as $ID){
 					if(!isset($get['output']['details'][$get['output']['this']['raw']['setHostType']]['raw'][$ID])){
 						$get['output']['details'][$get['output']['this']['raw']['setHostType']]['raw'][$ID] = $this->Auth->read($get['output']['this']['raw']['setHostType'],$ID)->all()[0];
 						$get['output']['details'][$get['output']['this']['raw']['setHostType']]['dom'][$ID] = $this->convertToDOM($get['output']['details'][$get['output']['this']['raw']['setHostType']]['raw'][$ID]);

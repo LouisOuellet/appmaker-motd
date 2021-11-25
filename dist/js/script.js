@@ -13,9 +13,6 @@ API.Plugins.motd = {
 				if(dataset.success != undefined){
 					var data = dataset.output;
 					console.log(data);
-					console.log(data.this.raw.setHostType);
-					console.log(data.relations);
-					console.log(data.relations[data.this.raw.setHostType]);
 					var html = '';
 					var count = 0;
 					html += '<div class="motd-content-wrapper motd-background row m-0 align-items-center text-center justify-content-center">';
