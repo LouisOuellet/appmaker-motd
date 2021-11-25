@@ -144,10 +144,12 @@ API.Plugins.motd = {
 								html += '</div>';
 								html += '<div class="motd-page hide" data-page="menu">';
 									html += '<p><h2>Menu</h2></p>';
-									html += '<div class="btn-group btn-block">';
-										html += '<button class="btn btn-outline-warning btn-lg active" data-menu="adult">Adulte</button>';
-										html += '<button class="btn btn-outline-warning btn-lg" data-menu="kid">Enfant</button>';
-									html += '</div>';
+									if(data.this.raw.menuKid != '' && data.this.raw.menuKid != null){
+										html += '<div class="btn-group btn-block">';
+											html += '<button class="btn btn-outline-warning btn-lg active" data-menu="adult">Adulte</button>';
+											html += '<button class="btn btn-outline-warning btn-lg" data-menu="kid">Enfant</button>';
+										html += '</div>';
+									}
 									html += '<div class="motd-menus mt-4">';
 										html += '<div class="motd-menu active" data-menu="adult">';
 											html += data.this.raw.menuAdult;
