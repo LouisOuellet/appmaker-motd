@@ -275,7 +275,7 @@
   }
   .motd-page .timeline > li {
     min-height: 100px;
-    margin-bottom: 100px;
+    margin-bottom: 60px;
   }
   .motd-page .timeline > li .timeline-panel {
     float: left;
