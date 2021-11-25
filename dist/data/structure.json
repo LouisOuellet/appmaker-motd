@@ -1,4 +1,66 @@
 {
+    "event_items": {
+        "id": {
+            "order": 1,
+            "type": "int(11)"
+        },
+        "1": "id",
+        "created": {
+            "order": 2,
+            "type": "datetime"
+        },
+        "2": "created",
+        "modified": {
+            "order": 3,
+            "type": "datetime"
+        },
+        "3": "modified",
+        "owner": {
+            "order": 4,
+            "type": "varchar(255)"
+        },
+        "4": "owner",
+        "updated_by": {
+            "order": 5,
+            "type": "varchar(255)"
+        },
+        "5": "updated_by",
+        "title": {
+            "order": 6,
+            "type": "varchar(255)"
+        },
+        "6": "title",
+        "description": {
+            "order": 7,
+            "type": "text"
+        },
+        "7": "description",
+        "date": {
+            "order": 8,
+            "type": "varchar(255)"
+        },
+        "8": "date",
+        "time": {
+            "order": 9,
+            "type": "varchar(255)"
+        },
+        "9": "time",
+        "setEvent": {
+            "order": 10,
+            "type": "varchar(255)"
+        },
+        "10": "setEvent",
+        "setVows": {
+            "order": 11,
+            "type": "varchar(255)"
+        },
+        "11": "setVows",
+        "setGallery": {
+            "order": 12,
+            "type": "varchar(255)"
+        },
+        "12": "setGallery"
+    },
     "events": {
         "id": {
             "order": 1,
@@ -30,56 +92,56 @@
             "type": "varchar(255)"
         },
         "6": "name",
-        "date": {
+        "type": {
             "order": 7,
             "type": "varchar(255)"
         },
-        "7": "date",
-        "time": {
+        "7": "type",
+        "date": {
             "order": 8,
-            "type": "varchar(255)"
+            "type": "date"
         },
-        "8": "time",
-        "address": {
+        "8": "date",
+        "time": {
             "order": 9,
-            "type": "varchar(255)"
+            "type": "time"
         },
-        "9": "address",
-        "zipcode": {
+        "9": "time",
+        "address": {
             "order": 10,
             "type": "varchar(255)"
         },
-        "10": "zipcode",
-        "state": {
+        "10": "address",
+        "zipcode": {
             "order": 11,
             "type": "varchar(255)"
         },
-        "11": "state",
-        "country": {
+        "11": "zipcode",
+        "state": {
             "order": 12,
             "type": "varchar(255)"
         },
-        "12": "country",
-        "about": {
+        "12": "state",
+        "country": {
             "order": 13,
-            "type": "longtext"
+            "type": "varchar(255)"
         },
-        "13": "about",
-        "menuAdult": {
+        "13": "country",
+        "about": {
             "order": 14,
             "type": "longtext"
         },
-        "14": "menuAdult",
-        "menuKid": {
+        "14": "about",
+        "menuAdult": {
             "order": 15,
             "type": "longtext"
         },
-        "15": "menuKid",
-        "isWedding": {
+        "15": "menuAdult",
+        "menuKid": {
             "order": 16,
-            "type": "varchar(255)"
+            "type": "longtext"
         },
-        "16": "isWedding",
+        "16": "menuKid",
         "hasGallery": {
             "order": 17,
             "type": "varchar(255)"
@@ -105,10 +167,20 @@
             "type": "varchar(255)"
         },
         "21": "setHostType",
-        "setToken": {
+        "setPlanners": {
             "order": 22,
             "type": "varchar(255)"
         },
-        "22": "setToken"
+        "22": "setPlanners",
+        "setStaffs": {
+            "order": 23,
+            "type": "varchar(255)"
+        },
+        "23": "setStaffs",
+        "setToken": {
+            "order": 24,
+            "type": "varchar(255)"
+        },
+        "24": "setToken"
     }
 }
