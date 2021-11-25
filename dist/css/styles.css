@@ -93,6 +93,7 @@
 .motd-page .portfolio-item {
   margin-left: auto;
   margin-right: auto;
+  border-radius:25px;
 }
 .motd-page .portfolio-item .portfolio-link {
   position: relative;
@@ -109,7 +110,6 @@
   justify-content: center;
   opacity: 0;
   transition: opacity ease-in-out 0.25s;
-  border-radius:25px;
 }
 .motd-page .portfolio-item .portfolio-link .portfolio-hover .portfolio-hover-content {
   font-size: 1.25rem;
