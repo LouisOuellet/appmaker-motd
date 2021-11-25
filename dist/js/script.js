@@ -23,9 +23,6 @@ API.Plugins.motd = {
 						for(var [key, item] of Object.entries(data.relations.event_items)){
 							items[item.date+'T'+item.time] = item;
 						}
-						// items = Object.keys(items).sort().reduce(
-						//   (obj, key) => { obj[key] = items[key];return obj; },{}
-						// );
 					}
 					console.log(data,hosts,items);
 					var html = '';
@@ -127,69 +124,19 @@ API.Plugins.motd = {
 								html += '<div class="motd-page hide" data-page="planning">';
 									html += '<p><h2>Programme</h2></p>';
 		              html += '<ul class="timeline">';
-		                html += '<li>';
-		                  html += '<div class="timeline-image"><h4>13:00</h4></div>';
-		                  html += '<div class="timeline-panel">';
-		                    html += '<div class="timeline-heading">';
-		                      html += '<h4>Arrivé des invités</h4>';
-		                    html += '</div>';
-		                    html += '<div class="timeline-body"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p></div>';
-		                  html += '</div>';
-		                html += '</li>';
-		                html += '<li class="timeline-inverted">';
-		                  html += '<div class="timeline-image"><h4>13:30</h4></div>';
-		                  html += '<div class="timeline-panel">';
-		                    html += '<div class="timeline-heading">';
-		                      html += '<h4>Allergies</h4>';
-		                    html += '</div>';
-		                    html += '<div class="timeline-body"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p></div>';
-		                  html += '</div>';
-		                html += '</li>';
-		                html += '<li>';
-		                  html += '<div class="timeline-image"><h4>14:00</h4></div>';
-		                  html += '<div class="timeline-panel">';
-		                    html += '<div class="timeline-heading">';
-		                      html += '<h4>Décoration de la salle</h4>';
-		                    html += '</div>';
-		                    html += '<div class="timeline-body"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p></div>';
-		                  html += '</div>';
-		                html += '</li>';
-		                html += '<li class="timeline-inverted">';
-		                  html += '<div class="timeline-image"><h4>16:00</h4></div>';
-		                  html += '<div class="timeline-panel">';
-		                    html += '<div class="timeline-heading">';
-		                      html += '<h4>Cérémonie</h4>';
-		                    html += '</div>';
-		                    html += '<div class="timeline-body"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p></div>';
-		                  html += '</div>';
-		                html += '</li>';
-		                html += '<li>';
-		                  html += '<div class="timeline-image"><h4>16:45</h4></div>';
-		                  html += '<div class="timeline-panel">';
-		                    html += '<div class="timeline-heading">';
-		                      html += '<h4>Cocktail</h4>';
-		                    html += '</div>';
-		                    html += '<div class="timeline-body"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p></div>';
-		                  html += '</div>';
-		                html += '</li>';
-		                html += '<li class="timeline-inverted">';
-		                  html += '<div class="timeline-image"><h4>17:00</h4></div>';
-		                  html += '<div class="timeline-panel">';
-		                    html += '<div class="timeline-heading">';
-		                      html += '<h4>Ouverture du Bar</h4>';
-		                    html += '</div>';
-		                    html += '<div class="timeline-body"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p></div>';
-		                  html += '</div>';
-		                html += '</li>';
-		                html += '<li>';
-		                  html += '<div class="timeline-image"><h4>18:00</h4></div>';
-		                  html += '<div class="timeline-panel">';
-		                    html += '<div class="timeline-heading">';
-		                      html += '<h4>Repas Servi</h4>';
-		                    html += '</div>';
-		                    html += '<div class="timeline-body"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p></div>';
-		                  html += '</div>';
-		                html += '</li>';
+										var inverted = ' class="timeline-inverted"';
+										for(var [stamp, item] of Object.entries(items)){
+											if(inverted == ''){ inverted = ' class="timeline-inverted"'; } else { inverted = ''; }
+											html += '<li'+inverted+'>';
+			                  html += '<div class="timeline-image"><h4>'+item.time.substring(0,5)+'</h4></div>';
+			                  html += '<div class="timeline-panel">';
+			                    html += '<div class="timeline-heading">';
+			                      html += '<h4>'+item.title+'</h4>';
+			                    html += '</div>';
+			                    html += '<div class="timeline-body">'+item.description+'</div>';
+			                  html += '</div>';
+			                html += '</li>';
+										}
 		              html += '</ul>';
 								html += '</div>';
 								html += '<div class="motd-page hide" data-page="menu">';
