@@ -266,7 +266,7 @@
 .motd-page .timeline > li.timeline-inverted > .timeline-panel {
   padding: 0 0 30px 30px;
 }
-.motd-page .timeline > li .timeline-panel .timeline-body {
+.motd-page .timeline li .timeline-panel .timeline-body {
   text-align: justify;
 }
 
