@@ -227,9 +227,7 @@
   background-color: rgba(243,156,18);
 }
 .motd-page .timeline > li .timeline-image h4, .motd-page .timeline > li .timeline-image .h4 {
-  font-size: 10px;
-  line-height: 14px;
-  margin-top: 12px;
+  margin-top: 70px;
 }
 .motd-page .timeline > li.timeline-inverted > .timeline-panel {
   float: right;
@@ -283,11 +281,6 @@
     height: 100px;
     margin-left: -70px;
   }
-  .motd-page .timeline > li .timeline-image h4, .motd-page .timeline > li .timeline-image .h4 {
-    font-size: 13px;
-    line-height: 18px;
-    margin-top: 40px;
-  }
   .motd-page .timeline > li.timeline-inverted > .timeline-panel {
     float: right;
     padding: 0 30px 20px 20px;
@@ -306,11 +299,6 @@
     height: 150px;
     margin-left: -95px;
   }
-  .motd-page .timeline > li .timeline-image h4, .motd-page .timeline > li .timeline-image .h4 {
-    font-size: 18px;
-    line-height: 26px;
-    margin-top: 55px;
-  }
   .motd-page .timeline > li.timeline-inverted > .timeline-panel {
     padding: 0 20px 20px;
   }
@@ -326,9 +314,6 @@
     width: 170px;
     height: 170px;
     margin-left: -105px;
-  }
-  .motd-page .timeline > li .timeline-image h4, .motd-page .timeline > li .timeline-image .h4 {
-    margin-top: 65px;
   }
   .motd-page .timeline > li.timeline-inverted > .timeline-panel {
     padding: 0 100px 20px 20px;
