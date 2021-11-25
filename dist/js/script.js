@@ -82,7 +82,7 @@ API.Plugins.motd = {
 				                      html += '<div class="row justify-content-center">';
 				                        html += '<div class="col-12">';
 				                          html += '<div class="modal-body">';
-																		html += '<div class="button-modal download-modal"><i class="fas fa-angle-down fa-2x mt-2"></i></div>';
+																		html += '<div class="button-modal download-modal" data-file="'+picture.dirname+'/'+picture.basename+'" data-basename="'+picture.basename+'"><i class="fas fa-angle-down fa-2x mt-2"></i></div>';
 																		html += '<div class="button-modal close-modal" data-dismiss="modal"><i class="fas fa-times fa-2x mt-2"></i></div>';
 				                            html += '<img class="img-fluid d-block mx-auto" src="'+picture.dirname+'/'+picture.basename+'" alt="'+picture.basename+'" />';
 				                          html += '</div>';
@@ -149,6 +149,7 @@ API.Plugins.motd = {
 					var nav = motd.find('nav.navbar').first();
 					var pages = motd.find('div.motd-pages').first();
 					var menus = motd.find('div.motd-menus').first();
+					var pictures = motd.find('div.motd-page[data-page="gallery"]').first();
 					$('#motd-1 button').off().click(function(){
 						$('#motd-1').fadeOut('slow','swing',function(){
 							$('#motd-2').fadeIn('slow','swing');
@@ -173,6 +174,11 @@ API.Plugins.motd = {
 						menus.find('div[data-menu].active').removeClass('active').fadeOut('slow','swing',function(){
 							menus.find('div[data-menu="'+menu+'"]').addClass('active').fadeIn('slow','swing');
 						});
+					});
+					pictures.find('div.download-modal[data-file][data-basename]').off().click(function(){
+						var file = $(this).attr('data-file');
+						var basename = $(this).attr('data-basename');
+						API.Helper.download(file,basename);
 					});
 				} else { $('div.wrapper').show(); }
 			});
