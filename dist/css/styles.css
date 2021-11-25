@@ -98,6 +98,8 @@
   position: relative;
   display: block;
   margin: 0 auto;
+}
+.motd-page .portfolio-item .portfolio-link img {
   border-radius:25px;
 }
 .motd-page .portfolio-item .portfolio-link .portfolio-hover {
@@ -110,6 +112,7 @@
   justify-content: center;
   opacity: 0;
   transition: opacity ease-in-out 0.25s;
+  border-radius:25px;
 }
 .motd-page .portfolio-item .portfolio-link .portfolio-hover .portfolio-hover-content {
   font-size: 1.25rem;
