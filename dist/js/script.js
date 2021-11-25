@@ -82,7 +82,7 @@ API.Plugins.motd = {
 				                      html += '<div class="row justify-content-center">';
 				                        html += '<div class="col-12">';
 				                          html += '<div class="modal-body">';
-																		html += '<div class="close-modal" data-dismiss="modal"><i class="fas fa-times"></i></div>';
+																		html += '<div class="close-modal" data-dismiss="modal"><i class="fas fa-times mt-2"></i></div>';
 				                            html += '<img class="img-fluid d-block mx-auto" src="'+picture.dirname+'/'+picture.basename+'" alt="'+picture.basename+'" />';
 				                          html += '</div>';
 				                        html += '</div>';

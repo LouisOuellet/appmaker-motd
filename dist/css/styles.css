@@ -147,21 +147,10 @@
   height: 48px;
   border-radius:25px;
   background-color: rgba(243,156,18);
+  opacity: 100%;
 }
 .motd-page .portfolio-modal .close-modal:hover {
-  background-color: rgba(243,156,18,0.7);
-}
-.motd-page .portfolio-modal .close-modal div {
-  width: 48px!important;
-  height: 48px!important;
-  border-radius:25px;
-  -webkit-mask-image: url('/plugins/motd/dist/img/close-icon.svg');
-  mask-image: url('/plugins/motd/dist/img/close-icon.svg');
-  mask-size: 48px 48px;
-  background-color: rgba(255,255,255);
-}
-.motd-page .portfolio-modal .close-modal div:hover {
-  background-color: rgba(255,255,255,0.7);
+  opacity: 70%;
 }
 .motd-page .timeline-heading h4{
   font-family: 'SignPainter HouseScript'!important;
