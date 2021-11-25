@@ -18,18 +18,11 @@ API.Plugins.motd = {
 					  html += '<div class="w-auto motd-box bg-black noselect" id="motd-1">';
 					    html += '<p><h2>Bienvenue au mariage de</h2></p>';
 							for(var [key, host] of Object.entries(API.Helper.trim(data.this.raw.setHosts,';').split(';'))){
-								console.log(data.relations[data.this.raw.setHostType]);
-								console.log(key,host);
-								console.log(data.relations[data.this.raw.setHostType][host]);
 								if(API.Helper.isSet(data,['relations',data.this.raw.setHostType,host])){
 									if(key > 0){ html += '<p><h1>&</h1></p>'; }
 									html += '<p><h1 class="mt-3">'+data.relations[data.this.raw.setHostType][host].name+'</h1></p>';
-									count++;
 								}
 							}
-					    // html += '<p><h1 class="mt-3">Louis ouellet</h1></p>';
-					    // html += '<p><h1>et</h1></p>';
-					    // html += '<p class="mt-4"><h1 class="mt-4">Christelle Tsague</h1></p>';
 					    html += '<p class="mt-4"><button class="btn btn-warning btn-lg mt-4">Entrer</button></p>';
 					  html += '</div>';
 					  html += '<div class="motd-box pt-0 bg-black noselect hide" id="motd-2">';
