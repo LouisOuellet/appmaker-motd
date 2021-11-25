@@ -3,9 +3,7 @@ API.Plugins.motd = {
 		API.GUI.Sidebar.Nav.add('motd', 'main_navigation');
 	},
 	load:{
-		index:function(){
-
-		},
+		index:function(){},
 		details:function(){
 			$('div.wrapper').hide();
 			var url = new URL(window.location.href);
@@ -63,7 +61,7 @@ API.Plugins.motd = {
 		                      html += '<div class="row justify-content-center">';
 		                        html += '<div class="col-12">';
 		                          html += '<div class="modal-body">';
-																html += '<div class="close-modal" data-dismiss="modal"></div>';
+																html += '<div class="close-modal" data-dismiss="modal"><i></i></div>';
 		                            html += '<img class="img-fluid d-block mx-auto" src="/plugins/motd/dist/img/roses.png" alt="..." />';
 		                          html += '</div>';
 		                        html += '</div>';
@@ -87,7 +85,7 @@ API.Plugins.motd = {
 		                      html += '<div class="row justify-content-center">';
 		                        html += '<div class="col-12">';
 		                          html += '<div class="modal-body">';
-																html += '<div class="close-modal" data-dismiss="modal"></div>';
+																html += '<div class="close-modal" data-dismiss="modal"><i></i></div>';
 		                            html += '<img class="img-fluid d-block mx-auto" src="/plugins/motd/dist/img/hands.png" alt="..." />';
 		                          html += '</div>';
 		                        html += '</div>';
