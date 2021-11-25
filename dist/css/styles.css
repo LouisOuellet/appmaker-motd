@@ -175,7 +175,7 @@
 .motd-page .timeline:before {
   position: absolute;
   top: 0;
-  bottom: 40px;
+  bottom: 50px;
   left: 40px;
   width: 2px;
   margin-left: -1.5px;
