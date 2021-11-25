@@ -20,10 +20,12 @@ class motdAPI extends CRUDAPI {
 					if(!array_key_exists($picture,$pictures)){
 						$picture = pathinfo($gallery.'/'.$picture);
 						$picture['size'] = filesize($gallery.'/'.$picture['basename']);
-						var_dump($this->Auth->create('pictures',$picture));
+						$picture['id'] = $this->Auth->create('pictures',$picture);
+						$pictures[$picture['basename']] = $this->Auth->read('pictures',$picture['id'])->all()[0];
 					}
 				}
 			} else { $this->mkdir('/data/events/'.$data['id'].'/gallery'); }
+			var_dump($pictures);
 			// Load Event
 			$get = parent::get('events', $data);
 			// Load Items
