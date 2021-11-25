@@ -20,19 +20,19 @@ class motdAPI extends CRUDAPI {
 					'link_to_2' => $gallery['id'],
 				]);
 			}
-			$files = $this->Auth->query('SELECT * FROM `pictures` WHERE `dirname` = ?',$gallery['basename']);
+			$files = $this->Auth->query('SELECT * FROM `pictures` WHERE `dirname` = ?',$gallery['dirname']);
 			if($files->numRows() > 0){
 				$files = $pictures->fetchAll()->All();
 			} else { $files = []; }
 			$pictures = [];
 			foreach($files as $picture){ $pictures[$picture['basename']] = $picture; }
-			if(is_file($gallery['basename'])||is_dir($gallery['basename'])){
-				$files = scandir($gallery['basename']);
+			if(is_file($gallery['dirname'])||is_dir($gallery['dirname'])){
+				$files = scandir($gallery['dirname']);
 				$files = array_diff($files, array('.', '..'));
 				foreach($files as $key => $picture){
 					if(!array_key_exists($picture,$pictures)){
-						$picture = pathinfo($gallery['basename'].'/'.$picture);
-						$picture['size'] = filesize($gallery['basename'].'/'.$picture['basename']);
+						$picture = pathinfo($gallery['dirname'].'/'.$picture);
+						$picture['size'] = filesize($gallery['dirname'].'/'.$picture['basename']);
 						$picture['id'] = $this->Auth->create('pictures',$picture);
 						$pictures[$picture['basename']] = $this->Auth->read('pictures',$picture['id'])->all()[0];
 						$this->createRelationship([
