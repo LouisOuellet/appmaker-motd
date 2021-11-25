@@ -21,6 +21,7 @@ API.Plugins.motd = {
 							for(var [id, host] of Object.entries(API.Helper.trim(data.this.raw.setHosts,';').split(';'))){
 								if(count > 0){ html += '<p><h1>&</h1></p>'; }
 								console.log(data.relations[data.this.raw.setHostType]);
+								console.log(id);
 								console.log(data.relations[data.this.raw.setHostType][id]);
 								html += '<p><h1 class="mt-3">'+data.relations[data.this.raw.setHostType][id].name+'</h1></p>';
 								count++;
