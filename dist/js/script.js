@@ -51,7 +51,6 @@ API.Plugins.motd = {
 								html += '<div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">';
 			            html += '<div class="modal-dialog">';
 		                html += '<div class="modal-content">';
-	                    html += '<div class="close-modal" data-dismiss="modal"></div>';
 	                    html += '<div class="container">';
                         html += '<div class="row justify-content-center">';
                           html += '<div class="col-12">';
