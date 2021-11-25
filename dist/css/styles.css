@@ -138,7 +138,7 @@
 .motd-page .portfolio-modal .modal-body img {
   border-radius:25px;
 }
-.motd-page .portfolio-modal .close-modal {
+.motd-page .portfolio-modal .button-modal {
   cursor: pointer;
   position: absolute;
   top: 24px;
@@ -149,8 +149,15 @@
   background-color: rgba(243,156,18);
   opacity: 100%;
 }
-.motd-page .portfolio-modal .close-modal:hover {
+.motd-page .portfolio-modal .button-modal:hover {
   opacity: 70%;
+}
+.motd-page .portfolio-modal .download-modal {
+  background-color: rgba(69,77,85);
+  right: 96px;
+}
+.motd-page .portfolio-modal .close-modal {
+  right: 24px;
 }
 .motd-page .timeline-heading h4{
   font-family: 'SignPainter HouseScript'!important;
