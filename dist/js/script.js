@@ -18,7 +18,17 @@ API.Plugins.motd = {
 							API.Helper.set(hosts,[host],data.relations[data.this.raw.setHostType][host]);
 						}
 					}
-					console.log(data,hosts);
+					var items = {};
+					if(API.Helper.isSet(data,['relations','event_items'])){
+						for(var [key, item] of Object.entries(data.relations.event_items)){
+							items[item.date+'T'+item.time] = item;
+						}
+						console.log(items);
+						items = Object.keys(items).sort().reduce(
+						  (obj, key) => { obj[key] = items[key];return obj; },{}
+						);
+					}
+					console.log(data,hosts,items);
 					var html = '';
 					var count = 0;
 					html += '<div class="motd-content-wrapper motd-background row m-0 align-items-center text-center justify-content-center">';

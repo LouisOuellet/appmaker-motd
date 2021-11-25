@@ -37,12 +37,12 @@
         "7": "description",
         "date": {
             "order": 8,
-            "type": "varchar(255)"
+            "type": "date"
         },
         "8": "date",
         "time": {
             "order": 9,
-            "type": "varchar(255)"
+            "type": "time"
         },
         "9": "time",
         "setEvent": {
