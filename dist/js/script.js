@@ -12,16 +12,22 @@ API.Plugins.motd = {
 				var dataset = JSON.parse(result);
 				if(dataset.success != undefined){
 					var data = dataset.output;
+					var hosts = {};
+					for(var [key, host] of Object.entries(API.Helper.trim(data.this.raw.setHosts,';').split(';'))){
+						if(API.Helper.isSet(data,['relations',data.this.raw.setHostType,host])){
+							API.Helper.set(hosts,[host],data.relations[data.this.raw.setHostType][host]);
+						}
+					}
 					console.log(data);
 					var html = '';
+					var count = 0;
 					html += '<div class="motd-content-wrapper motd-background row m-0 align-items-center text-center justify-content-center">';
 					  html += '<div class="w-auto motd-box bg-black noselect" id="motd-1">';
 					    html += '<p><h2>Bienvenue au mariage de</h2></p>';
-							for(var [key, host] of Object.entries(API.Helper.trim(data.this.raw.setHosts,';').split(';'))){
-								if(API.Helper.isSet(data,['relations',data.this.raw.setHostType,host])){
-									if(key > 0){ html += '<p><h1>&</h1></p>'; }
-									html += '<p><h1 class="mt-3">'+data.relations[data.this.raw.setHostType][host].name+'</h1></p>';
-								}
+							for(var [id, host] of Object.entries(hosts)){
+								if(count > 0){ html += '<p><h1>&</h1></p>'; }
+								html += '<p><h1 class="mt-3">'+host.name+'</h1></p>';
+								count++;
 							}
 					    html += '<p class="mt-4"><button class="btn btn-warning btn-lg mt-4">Entrer</button></p>';
 					  html += '</div>';
