@@ -150,15 +150,16 @@
 .motd-page .portfolio-modal .close-modal:hover {
   background-color: rgba(243,156,18,0.7);
 }
-.motd-page .portfolio-modal .close-modal span {
-  width: 48px;
-  height: 48px;
+.motd-page .portfolio-modal .close-modal div {
+  width: 48px!important;
+  height: 48px!important;
   /* border-radius:25px; */
   -webkit-mask-image: url('/plugins/motd/dist/img/close-icon.svg');
   mask-image: url('/plugins/motd/dist/img/close-icon.svg');
+  mask-size: 48px 48px;
   background-color: rgba(255,255,255);
 }
-.motd-page .portfolio-modal .close-modal span:hover {
+.motd-page .portfolio-modal .close-modal div:hover {
   background-color: rgba(255,255,255,0.7);
 }
 .motd-page .timeline-heading h4{

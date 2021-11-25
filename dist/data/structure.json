@@ -112,75 +112,80 @@
             "type": "varchar(255)"
         },
         "10": "address",
-        "zipcode": {
+        "city": {
             "order": 11,
             "type": "varchar(255)"
         },
-        "11": "zipcode",
-        "state": {
+        "11": "city",
+        "zipcode": {
             "order": 12,
             "type": "varchar(255)"
         },
-        "12": "state",
-        "country": {
+        "12": "zipcode",
+        "state": {
             "order": 13,
             "type": "varchar(255)"
         },
-        "13": "country",
-        "about": {
+        "13": "state",
+        "country": {
             "order": 14,
-            "type": "longtext"
+            "type": "varchar(255)"
         },
-        "14": "about",
-        "menuAdult": {
+        "14": "country",
+        "about": {
             "order": 15,
             "type": "longtext"
         },
-        "15": "menuAdult",
-        "menuKid": {
+        "15": "about",
+        "menuAdult": {
             "order": 16,
             "type": "longtext"
         },
-        "16": "menuKid",
-        "hasGallery": {
+        "16": "menuAdult",
+        "menuKid": {
             "order": 17,
-            "type": "varchar(255)"
+            "type": "longtext"
         },
-        "17": "hasGallery",
-        "hasVows": {
+        "17": "menuKid",
+        "hasGallery": {
             "order": 18,
             "type": "varchar(255)"
         },
-        "18": "hasVows",
-        "hasMenu": {
+        "18": "hasGallery",
+        "hasVows": {
             "order": 19,
             "type": "varchar(255)"
         },
-        "19": "hasMenu",
-        "setHosts": {
+        "19": "hasVows",
+        "hasMenu": {
             "order": 20,
             "type": "varchar(255)"
         },
-        "20": "setHosts",
-        "setHostType": {
+        "20": "hasMenu",
+        "setHosts": {
             "order": 21,
             "type": "varchar(255)"
         },
-        "21": "setHostType",
-        "setPlanners": {
+        "21": "setHosts",
+        "setHostType": {
             "order": 22,
             "type": "varchar(255)"
         },
-        "22": "setPlanners",
-        "setStaffs": {
+        "22": "setHostType",
+        "setPlanners": {
             "order": 23,
             "type": "varchar(255)"
         },
-        "23": "setStaffs",
-        "setToken": {
+        "23": "setPlanners",
+        "setStaffs": {
             "order": 24,
             "type": "varchar(255)"
         },
-        "24": "setToken"
+        "24": "setStaffs",
+        "setToken": {
+            "order": 25,
+            "type": "varchar(255)"
+        },
+        "25": "setToken"
     }
 }
