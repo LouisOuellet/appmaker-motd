@@ -6,7 +6,7 @@ API.Plugins.motd = {
 		index:function(){
 			$('div.wrapper').hide();
 			var html = '';
-			html += '<div class="motd-content-wrapper motd-background row align-items-center text-center justify-content-center">';
+			html += '<div class="motd-content-wrapper motd-background row m-0 align-items-center text-center justify-content-center">';
 			  html += '<div class="w-auto motd-box bg-black noselect" id="motd-1">';
 			    html += '<p><h2>Bienvenue au mariage de</h2></p>';
 			    html += '<p><h1 class="mt-3">Louis ouellet</h1></p>';
