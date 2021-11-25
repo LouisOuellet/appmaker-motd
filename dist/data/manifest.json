@@ -1,5 +1,5 @@
 {
-    "build": 170,
+    "build": 171,
     "version": "21.11-dev",
     "name": "motd",
     "repository": {
@@ -20,6 +20,8 @@
         "table": [
             "events",
             "event_items",
+            "galleries",
+            "pictures",
             "vows"
         ]
     }

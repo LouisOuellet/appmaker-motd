@@ -7,15 +7,22 @@ class motdAPI extends CRUDAPI {
 			$this->Auth->setLimit(0);
 			// Scan Gallery
 			$gallery = dirname(__FILE__,3).'/data/events/'.$data['id'].'/gallery';
+			$files = $this->Auth->query('SELECT * FROM `pictures` WHERE `dirname` = ?',$gallery);
+			if($files->numRows() > 0){
+				$files = $pictures->fetchAll()->All();
+			} else { $files = []; }
 			$pictures = [];
+			foreach($files as $picture){ $pictures[$picture['basename']] = $picture; }
 			if(is_file($gallery)||is_dir($gallery)){
 				$files = scandir($gallery);
 				$files = array_diff($files, array('.', '..'));
 				foreach($files as $key => $picture){
-					$pictures[$key] = pathinfo($gallery.'/'.$picture);
-					$pictures[$key]['size'] = filesize($gallery.'/'.$picture);
+					if(!array_key_exists($picture,$pictures)){
+						$picture = pathinfo($gallery.'/'.$picture);
+						$picture['size'] = filesize($gallery.'/'.$picture['basename']);
+						var_dump($this->Auth->create('pictures',$picture));
+					}
 				}
-				var_dump($pictures);
 			} else { $this->mkdir('/data/events/'.$data['id'].'/gallery'); }
 			// Load Event
 			$get = parent::get('events', $data);
