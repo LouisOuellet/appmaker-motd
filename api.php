@@ -7,25 +7,43 @@ class motdAPI extends CRUDAPI {
 			$this->Auth->setLimit(0);
 			// Scan Gallery
 			$gallery = dirname(__FILE__,3).'/data/events/'.$data['id'].'/gallery';
-			$files = $this->Auth->query('SELECT * FROM `pictures` WHERE `dirname` = ?',$gallery);
+			$gallery = $this->Auth->query('SELECT * FROM `galleries` WHERE `dirname` = ?',$gallery);
+			if($gallery->numRows() > 0){
+				$gallery = $gallery->fetchAll()->All()[0];
+			} else {
+				$gallery = $this->Auth->create('galleries',['basename' => $gallery]);
+				$gallery = $this->Auth->read('galleries',$gallery)->all()[0];
+				$this->createRelationship([
+					'relationship_1' => 'events',
+					'link_to_1' => $data['id'],
+					'relationship_2' => 'galleries',
+					'link_to_2' => $gallery['id'],
+				]);
+			}
+			$files = $this->Auth->query('SELECT * FROM `pictures` WHERE `dirname` = ?',$gallery['basename']);
 			if($files->numRows() > 0){
 				$files = $pictures->fetchAll()->All();
 			} else { $files = []; }
 			$pictures = [];
 			foreach($files as $picture){ $pictures[$picture['basename']] = $picture; }
-			if(is_file($gallery)||is_dir($gallery)){
-				$files = scandir($gallery);
+			if(is_file($gallery['basename'])||is_dir($gallery['basename'])){
+				$files = scandir($gallery['basename']);
 				$files = array_diff($files, array('.', '..'));
 				foreach($files as $key => $picture){
 					if(!array_key_exists($picture,$pictures)){
-						$picture = pathinfo($gallery.'/'.$picture);
-						$picture['size'] = filesize($gallery.'/'.$picture['basename']);
+						$picture = pathinfo($gallery['basename'].'/'.$picture);
+						$picture['size'] = filesize($gallery['basename'].'/'.$picture['basename']);
 						$picture['id'] = $this->Auth->create('pictures',$picture);
 						$pictures[$picture['basename']] = $this->Auth->read('pictures',$picture['id'])->all()[0];
+						$this->createRelationship([
+							'relationship_1' => 'galleries',
+						  'link_to_1' => $gallery['id'],
+						  'relationship_2' => 'pictures',
+						  'link_to_2' => $pictures[$picture['basename']]['id'],
+						]);
 					}
 				}
 			} else { $this->mkdir('/data/events/'.$data['id'].'/gallery'); }
-			var_dump($pictures);
 			// Load Event
 			$get = parent::get('events', $data);
 			// Load Items
