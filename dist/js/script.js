@@ -14,17 +14,16 @@ API.Plugins.motd = {
 					var data = dataset.output;
 					console.log(data);
 					var html = '';
-					var count = 0;
 					html += '<div class="motd-content-wrapper motd-background row m-0 align-items-center text-center justify-content-center">';
 					  html += '<div class="w-auto motd-box bg-black noselect" id="motd-1">';
 					    html += '<p><h2>Bienvenue au mariage de</h2></p>';
-							for(var [id, host] of Object.entries(API.Helper.trim(data.this.raw.setHosts,';').split(';'))){
+							for(var [key, host] of Object.entries(API.Helper.trim(data.this.raw.setHosts,';').split(';'))){
 								console.log(data.relations[data.this.raw.setHostType]);
-								console.log(id);
-								console.log(data.relations[data.this.raw.setHostType][id]);
-								if(API.Helper.isSet(data,['relations',data.this.raw.setHostType,id])){
-									if(count > 0){ html += '<p><h1>&</h1></p>'; }
-									html += '<p><h1 class="mt-3">'+data.relations[data.this.raw.setHostType][id].name+'</h1></p>';
+								console.log(key,host);
+								console.log(data.relations[data.this.raw.setHostType][host]);
+								if(API.Helper.isSet(data,['relations',data.this.raw.setHostType,host])){
+									if(key > 0){ html += '<p><h1>&</h1></p>'; }
+									html += '<p><h1 class="mt-3">'+data.relations[data.this.raw.setHostType][host].name+'</h1></p>';
 									count++;
 								}
 							}
