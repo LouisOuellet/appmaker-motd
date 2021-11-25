@@ -13,9 +13,6 @@ API.Plugins.motd = {
 				if(dataset.success != undefined){
 					var data = dataset.output;
 					console.log(data);
-					console.log(data.this.raw.setHostType);
-					console.log(data.relations);
-					console.log(data.relations[data.this.raw.setHostType]);
 					var html = '';
 					var count = 0;
 					html += '<div class="motd-content-wrapper motd-background row m-0 align-items-center text-center justify-content-center">';
@@ -23,7 +20,7 @@ API.Plugins.motd = {
 					    html += '<p><h2>Bienvenue au mariage de</h2></p>';
 							for(var [id, host] of Object.entries(API.Helper.trim(data.this.raw.setHosts,';').split(';'))){
 								if(count > 0){ html += '<p><h1>&</h1></p>'; }
-								html += '<p><h1 class="mt-3">'+data.relations[data.this.raw.setHostType].name+'</h1></p>';
+								html += '<p><h1 class="mt-3">'+data.relations[data.this.raw.setHostType][id].name+'</h1></p>';
 								count++;
 							}
 					    // html += '<p><h1 class="mt-3">Louis ouellet</h1></p>';
