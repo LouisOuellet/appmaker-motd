@@ -1,5 +1,5 @@
 {
-    "build": 166,
+    "build": 167,
     "version": "21.11-dev",
     "name": "motd",
     "repository": {
@@ -19,7 +19,8 @@
     "requirements": {
         "table": [
             "events",
-            "event_items"
+            "event_items",
+            "vows"
         ]
     }
 }
