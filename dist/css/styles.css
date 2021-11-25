@@ -90,6 +90,10 @@
   list-style-image: initial;
   list-style-type: none;
 }
+.motd-page .container {
+  margin: 0px;
+  padding: 0px;
+}
 .motd-page .portfolio-item {
   margin-left: auto;
   margin-right: auto;
