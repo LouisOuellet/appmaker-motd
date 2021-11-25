@@ -43,7 +43,7 @@ API.Plugins.motd = {
 									html += '<div class="portfolio-item">';
 										html += '<a class="portfolio-link" data-toggle="modal" href="#portfolioModal1">';
 											html += '<div class="portfolio-hover">';
-												html += '<div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>';
+												html += '<div class="portfolio-hover-content"><i class="fas fa-expand fa-3x"></i></div>';
 											html += '</div>';
 											html += '<img class="img-fluid" src="/plugins/motd/dist/img/background.png" alt="..." />';
 										html += '</a>';
