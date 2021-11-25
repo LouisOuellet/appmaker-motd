@@ -23,6 +23,9 @@ API.Plugins.motd = {
 						for(var [key, item] of Object.entries(data.relations.event_items)){
 							items[item.date+'T'+item.time] = item;
 						}
+						items = Object.keys(items).sort().reduce(
+						  (obj, key) => { obj[key] = items[key];return obj; },{}
+						);
 					}
 					console.log(data,hosts,items);
 					var html = '';
