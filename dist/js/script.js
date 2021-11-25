@@ -65,10 +65,6 @@ API.Plugins.motd = {
 									html += '<p><h2>Gallerie</h2></p>';
 									html += '<div class="row justify-content-center">';
 										if(API.Helper.isSet(data,['relations','galleries']) && Object.keys(data.relations.galleries).length > 0){
-											console.log(data.relations.galleries);
-											console.log(data.relations.galleries[0]);
-											console.log(Object.keys(data.relations.galleries)[0]);
-											console.log(data.relations.galleries[Object.keys(data.relations.galleries)[0]]);
 											for(var [key, picture] of Object.entries(data.relations.galleries[Object.keys(data.relations.galleries)[0]].pictures)){
 												html += '<div class="col-lg-4 col-sm-6 mb-4">';
 													html += '<div class="portfolio-item">';
@@ -86,7 +82,7 @@ API.Plugins.motd = {
 				                      html += '<div class="row justify-content-center">';
 				                        html += '<div class="col-12">';
 				                          html += '<div class="modal-body">';
-																		html += '<div class="close-modal" data-dismiss="modal"><div></div></div>';
+																		html += '<div class="close-modal" data-dismiss="modal"><i class="fas fa-times"></i></div>';
 				                            html += '<img class="img-fluid d-block mx-auto" src="'+picture.dirname+'/'+picture.basename+'" alt="'+picture.basename+'" />';
 				                          html += '</div>';
 				                        html += '</div>';
