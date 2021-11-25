@@ -22,7 +22,7 @@ class motdAPI extends CRUDAPI {
 			}
 			$files = $this->Auth->query('SELECT * FROM `pictures` WHERE `dirname` = ?',$gallery['dirname']);
 			if($files->numRows() > 0){
-				$files = $pictures->fetchAll()->All();
+				$files = $files->fetchAll()->All();
 			} else { $files = []; }
 			$pictures = [];
 			foreach($files as $picture){ $pictures[$picture['basename']] = $picture; }
