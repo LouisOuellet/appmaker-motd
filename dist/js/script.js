@@ -31,6 +31,7 @@ API.Plugins.motd = {
 					var html = '';
 					var count = 0;
 					html += '<div class="motd-content-wrapper motd-background row m-0 align-items-center text-center justify-content-center">';
+						html += '<button class="btn btn-warning btn-ControlPanel" data-action="ControlPanel"><i class="fas fa-bars"></i></button>';
 					  html += '<div class="w-auto motd-box bg-black noselect" id="motd-1">';
 					    html += '<p><h2>Bienvenue au mariage de</h2></p>';
 							for(var [id, host] of Object.entries(hosts)){
@@ -146,7 +147,6 @@ API.Plugins.motd = {
 									html += '</div>';
 								html += '</div>';
 							html += '</div>';
-					    html += '<p class="mt-4"><button class="btn btn-warning btn-lg" data-action="ControlPanel">Control Panel</button></p>';
 					  html += '</div>';
 					html += '</div>';
 					$('body').prepend(html);
@@ -160,7 +160,7 @@ API.Plugins.motd = {
 							$('#motd-2').fadeIn('slow','swing');
 						});
 					});
-					$('#motd-2 button[data-action="ControlPanel"]').off().click(function(){
+					$('.motd-content-wrapper button[data-action="ControlPanel"]').off().click(function(){
 						$('div.wrapper').show();
 						$('div.motd-content-wrapper').fadeOut('slow','swing');
 					});
