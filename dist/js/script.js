@@ -99,7 +99,7 @@ API.Plugins.motd = {
 										}
 										if(API.Helper.isSet(hosts,[API.Contents.Auth.User.id])){
 											html += '<div class="col-12">';
-												html += '<button class="btn btn-warning btn-lg btn-block" data-action="Upload"><i class="fas fa-plus fa-2x"></i></button>';
+												html += '<button class="btn btn-warning btn-lg btn-block" data-action="Upload"><i class="fas fa-plus"></i></button>';
 											html += '</div>';
 										}
 									html += '</div>';
