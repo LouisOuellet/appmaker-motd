@@ -93,6 +93,11 @@ API.Plugins.motd = {
 								        html += '</div>';
 											}
 										}
+										if(API.Helper.isSet(hosts,[API.Contents.Auth.User.id])){
+											html += '<div class="col-12">';
+												html += '<button class="btn btn-warning btn-lg btn-block" data-action="Upload"><i class="fas fa-plus fa-2x"></i></button>';
+											html += '</div>';
+										}
 									html += '</div>';
 								html += '</div>';
 								html += '<div class="motd-page hide" data-page="attendance">';

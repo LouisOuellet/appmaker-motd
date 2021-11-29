@@ -182,11 +182,21 @@
             "type": "varchar(255)"
         },
         "24": "setStaffs",
-        "setToken": {
+        "setMinInvites": {
             "order": 25,
             "type": "varchar(255)"
         },
-        "25": "setToken"
+        "25": "setMinInvites",
+        "setMaxInvites": {
+            "order": 26,
+            "type": "varchar(255)"
+        },
+        "26": "setMaxInvites",
+        "setToken": {
+            "order": 27,
+            "type": "varchar(255)"
+        },
+        "27": "setToken"
     },
     "galleries": {
         "id": {
