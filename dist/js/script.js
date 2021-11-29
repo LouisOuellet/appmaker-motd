@@ -30,8 +30,11 @@ API.Plugins.motd = {
 					console.log(data,hosts,items);
 					var html = '';
 					var count = 0;
+					$('div.motd-content-wrapper').remove();
 					html += '<div class="motd-content-wrapper motd-background row m-0 align-items-center text-center justify-content-center">';
-						html += '<button class="btn btn-warning btn-ControlPanel" data-action="ControlPanel"><i class="fas fa-bars"></i></button>';
+						if(API.Helper.isSet(hosts,[API.Contents.Auth.User.id])){
+							html += '<button class="btn btn-warning btn-flat btn-ControlPanel" data-action="ControlPanel"><i class="fas fa-bars"></i></button>';
+						}
 					  html += '<div class="w-auto motd-box bg-black noselect" id="motd-1">';
 					    html += '<p><h2>Bienvenue au mariage de</h2></p>';
 							for(var [id, host] of Object.entries(hosts)){
@@ -160,7 +163,7 @@ API.Plugins.motd = {
 							$('#motd-2').fadeIn('slow','swing');
 						});
 					});
-					$('.motd-content-wrapper button[data-action="ControlPanel"]').off().click(function(){
+					$('div.motd-content-wrapper button[data-action="ControlPanel"]').off().click(function(){
 						$('div.wrapper').show();
 						$('div.motd-content-wrapper').fadeOut('slow','swing');
 					});
