@@ -196,7 +196,17 @@
             "order": 27,
             "type": "varchar(255)"
         },
-        "27": "setToken"
+        "27": "setToken",
+        "hasSeatingPlan": {
+            "order": 28,
+            "type": "varchar(255)"
+        },
+        "28": "hasSeatingPlan",
+        "setUnitPrice": {
+            "order": 29,
+            "type": "varchar(255)"
+        },
+        "29": "setUnitPrice"
     },
     "galleries": {
         "id": {
