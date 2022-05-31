@@ -1,10 +1,10 @@
 {
-    "build": 195,
-    "version": "22.05-dev",
+    "build": 196,
+    "version": "22.05-pre-release",
     "name": "motd",
     "repository": {
         "name": "appmaker-motd",
-        "branch": "dev",
+        "branch": "pre-release",
         "host": {
             "git": "https:\/\/github.com\/LouisOuellet\/",
             "raw": "https:\/\/raw.githubusercontent.com\/LouisOuellet\/"
